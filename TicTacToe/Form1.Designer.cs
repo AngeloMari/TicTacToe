@@ -1,7 +1,7 @@
 ﻿
 namespace TicTacToe
 {
-    partial class Form1
+    partial class formGame
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,6 @@ namespace TicTacToe
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnStart = new System.Windows.Forms.Button();
             this.bntRestart = new System.Windows.Forms.Button();
             this.btnUndo = new System.Windows.Forms.Button();
             this.btnNorthWest = new System.Windows.Forms.Button();
@@ -43,29 +42,22 @@ namespace TicTacToe
             this.btnSouthEast = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
+            this.btnQuit = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnStart
-            // 
-            this.btnStart.Location = new System.Drawing.Point(-1, -1);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(62, 23);
-            this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
             // 
             // bntRestart
             // 
-            this.bntRestart.Location = new System.Drawing.Point(57, -1);
+            this.bntRestart.Location = new System.Drawing.Point(0, -1);
             this.bntRestart.Name = "bntRestart";
             this.bntRestart.Size = new System.Drawing.Size(62, 23);
             this.bntRestart.TabIndex = 1;
             this.bntRestart.Text = "Restart";
             this.bntRestart.UseVisualStyleBackColor = true;
+            this.bntRestart.Click += new System.EventHandler(this.bntRestart_Click);
             // 
             // btnUndo
             // 
-            this.btnUndo.Location = new System.Drawing.Point(116, -1);
+            this.btnUndo.Location = new System.Drawing.Point(57, -1);
             this.btnUndo.Name = "btnUndo";
             this.btnUndo.Size = new System.Drawing.Size(62, 23);
             this.btnUndo.TabIndex = 2;
@@ -79,6 +71,7 @@ namespace TicTacToe
             this.btnNorthWest.Size = new System.Drawing.Size(83, 68);
             this.btnNorthWest.TabIndex = 3;
             this.btnNorthWest.UseVisualStyleBackColor = true;
+            this.btnNorthWest.Click += new System.EventHandler(this.btnNorthWest_Click);
             // 
             // btnWest
             // 
@@ -147,7 +140,7 @@ namespace TicTacToe
             // 
             // btnHelp
             // 
-            this.btnHelp.Location = new System.Drawing.Point(331, -1);
+            this.btnHelp.Location = new System.Drawing.Point(175, -1);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(62, 23);
             this.btnHelp.TabIndex = 12;
@@ -157,7 +150,7 @@ namespace TicTacToe
             // 
             // btnAbout
             // 
-            this.btnAbout.Location = new System.Drawing.Point(272, -1);
+            this.btnAbout.Location = new System.Drawing.Point(116, -1);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(62, 23);
             this.btnAbout.TabIndex = 13;
@@ -165,11 +158,25 @@ namespace TicTacToe
             this.btnAbout.UseVisualStyleBackColor = true;
             this.btnAbout.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // btnQuit
+            // 
+            this.btnQuit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuit.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnQuit.Location = new System.Drawing.Point(367, -1);
+            this.btnQuit.Name = "btnQuit";
+            this.btnQuit.Size = new System.Drawing.Size(26, 23);
+            this.btnQuit.TabIndex = 14;
+            this.btnQuit.Text = "X";
+            this.btnQuit.UseVisualStyleBackColor = true;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
+            // 
+            // formGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 323);
+            this.ClientSize = new System.Drawing.Size(392, 284);
+            this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnSouthEast);
@@ -183,16 +190,15 @@ namespace TicTacToe
             this.Controls.Add(this.btnNorthWest);
             this.Controls.Add(this.btnUndo);
             this.Controls.Add(this.bntRestart);
-            this.Controls.Add(this.btnStart);
-            this.Name = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "formGame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button bntRestart;
         private System.Windows.Forms.Button btnUndo;
         private System.Windows.Forms.Button btnNorthWest;
@@ -206,6 +212,7 @@ namespace TicTacToe
         private System.Windows.Forms.Button btnSouthEast;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.Button btnQuit;
     }
 }
 

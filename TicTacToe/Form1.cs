@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TicTacToe
 {
-    public partial class Form1 : Form
+    public partial class formGame : Form
     {
-        public Form1()
+        public formGame()
         {
             InitializeComponent();
         }
@@ -43,6 +43,21 @@ namespace TicTacToe
                 "If you want to read more, check out:\n" +
                 "\nhttp://gamescrafters.berkeley.edu/games.php?game=tictactoe" +
                 "\nhttps://wonderopolis.org/wonder/how-old-is-tic-tac-toe");
+        }
+
+        private void bntRestart_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnNorthWest_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
