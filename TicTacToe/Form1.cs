@@ -16,14 +16,21 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
+        private void bntRestart_Click(object sender, EventArgs e)
+        {//To restart the game
+            btnTictac1.Text = "";
+            btnTictac2.Text = "";
+            btnTictac3.Text = "";
+            btnTictac4.Text = "";
+            btnTictac5.Text = "";
+            btnTictac6.Text = "";
+            btnTictac7.Text = "";
+            btnTictac8.Text = "";
+            btnTictac9.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+        private void btnHelp_Click(object sender, EventArgs e)
+        {//To show how to play the game
             MessageBox.Show("How to play Tic Tac Toe" +
                 "\n\n\n" + "1. The game should be played on a grid of 3 by 3 squares." +
                 "\n\n2. It is played by 2 players. One player will use 'X,' while the other is 'O,'" +
@@ -33,8 +40,8 @@ namespace TicTacToe
                 "\n\n5. If the squares are full, but there are no patterns created, then the game is draw.");
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
+        private void btnAbout_Click(object sender, EventArgs e)
+        {//To show what the game is all about
             MessageBox.Show("Tic Tac Toe\n\nIt is one of the most known games in the world. " +
                 "The game was even found out inside the temples of Egypt, where ancient Egyptians believe that it is a 'Magic Square.' " +
                 "Experts believe that the name Tic Tac Toe is from a 19th-century popular game " +
@@ -44,20 +51,24 @@ namespace TicTacToe
                 "\nhttp://gamescrafters.berkeley.edu/games.php?game=tictactoe" +
                 "\nhttps://wonderopolis.org/wonder/how-old-is-tic-tac-toe");
         }
-
-        private void bntRestart_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnQuit_Click(object sender, EventArgs e)
-        {
+        {//To exit the game
             Application.Exit();
         }
 
-        private void btnNorthWest_Click(object sender, EventArgs e)
-        {
+        bool xTurn = true;
+        //int numTurn = 0;
 
+        private void btnTictac_Click(object sender, EventArgs e)
+        {
+            Button move = (Button)sender;
+            if (xTurn)
+                move.Text = "X";
+            else
+                move.Text = "O";
+
+            xTurn = !xTurn;
+            move.Enabled = false;
         }
     }
 }
