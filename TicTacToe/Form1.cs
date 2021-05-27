@@ -16,8 +16,21 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
+
         private void bntRestart_Click(object sender, EventArgs e)
         {//To restart the game
+            //To reenable the buttons that were disabled in btnTictac_Click
+            btnTictac1.Enabled = true;
+            btnTictac2.Enabled = true;
+            btnTictac3.Enabled = true;
+            btnTictac4.Enabled = true;
+            btnTictac5.Enabled = true;
+            btnTictac6.Enabled = true;
+            btnTictac7.Enabled = true;
+            btnTictac8.Enabled = true;
+            btnTictac9.Enabled = true;
+
+            //To remove the "X" or "O"
             btnTictac1.Text = "";
             btnTictac2.Text = "";
             btnTictac3.Text = "";
@@ -27,6 +40,8 @@ namespace TicTacToe
             btnTictac7.Text = "";
             btnTictac8.Text = "";
             btnTictac9.Text = "";
+
+            numTurn = 0; //To avoid error in Draw message
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
@@ -55,20 +70,67 @@ namespace TicTacToe
         {//To exit the game
             Application.Exit();
         }
-
-        bool xTurn = true;
-        //int numTurn = 0;
+ 
+        bool xTurn = true; // X will appear
+        int numTurn = 0;   //Number of turns
 
         private void btnTictac_Click(object sender, EventArgs e)
-        {
+        {   //To know whi's to move
             Button move = (Button)sender;
             if (xTurn)
                 move.Text = "X";
             else
                 move.Text = "O";
 
-            xTurn = !xTurn;
-            move.Enabled = false;
+            xTurn = !xTurn;       //To flip from X to O
+            move.Enabled = false; //To disable the button after the move
+            numTurn++;            //To count the number of turns
+
+            winChecker();
+        }
+
+        private void winChecker()
+        {//To check if there is a winner
+            bool winner = false;
+
+            //For horizontal patterns
+            if ((btnTictac1.Text == btnTictac2.Text) && (btnTictac2.Text == btnTictac3.Text) && (!btnTictac1.Enabled))
+                winner = true;
+            else if ((btnTictac4.Text == btnTictac5.Text) && (btnTictac5.Text == btnTictac6.Text) && (!btnTictac4.Enabled))
+                winner = true;
+            else if ((btnTictac7.Text == btnTictac8.Text) && (btnTictac8.Text == btnTictac9.Text) && (!btnTictac7.Enabled))
+                winner = true;
+
+            //For vertical patterns
+            if ((btnTictac1.Text == btnTictac4.Text) && (btnTictac4.Text == btnTictac7.Text) && (!btnTictac1.Enabled))
+                winner = true;
+            else if ((btnTictac2.Text == btnTictac5.Text) && (btnTictac5.Text == btnTictac8.Text) && (!btnTictac2.Enabled))
+                winner = true;
+            else if ((btnTictac3.Text == btnTictac6.Text) && (btnTictac6.Text == btnTictac9.Text) && (!btnTictac3.Enabled))
+                winner = true;
+
+            //For Diagonal patterns
+            if ((btnTictac1.Text == btnTictac5.Text) && (btnTictac5.Text == btnTictac9.Text) && (!btnTictac1.Enabled))
+                winner = true;
+            else if ((btnTictac3.Text == btnTictac5.Text) && (btnTictac5.Text == btnTictac7.Text) && (!btnTictac3.Enabled))
+                winner = true;
+
+
+            if (winner)
+            {// To show who is the winner
+                String youWin = "";
+                if (xTurn)
+                   youWin = "O";
+                else
+                   youWin = "X";
+
+                MessageBox.Show(youWin + " Wins!", "Congratulations!");
+            }
+
+             else if (numTurn == 9)
+            {// To show if the game is draw
+                MessageBox.Show("It was a Draw!", "No Winner!");
+            }
         }
     }
 }
