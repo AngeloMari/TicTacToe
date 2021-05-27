@@ -125,11 +125,31 @@ namespace TicTacToe
                    youWin = "X";
 
                 MessageBox.Show(youWin + " Wins!", "Congratulations!");
+
+                btnTictac1.Enabled = false;
+                btnTictac2.Enabled = false;
+                btnTictac3.Enabled = false;
+                btnTictac4.Enabled = false;
+                btnTictac5.Enabled = false;
+                btnTictac6.Enabled = false;
+                btnTictac7.Enabled = false;
+                btnTictac8.Enabled = false;
+                btnTictac9.Enabled = false;
             }
 
              else if (numTurn == 9)
             {// To show if the game is draw
                 MessageBox.Show("It was a Draw!", "No Winner!");
+
+                btnTictac1.Enabled = false;
+                btnTictac2.Enabled = false;
+                btnTictac3.Enabled = false;
+                btnTictac4.Enabled = false;
+                btnTictac5.Enabled = false;
+                btnTictac6.Enabled = false;
+                btnTictac7.Enabled = false;
+                btnTictac8.Enabled = false;
+                btnTictac9.Enabled = false;
             }
         }
     }
