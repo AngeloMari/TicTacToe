@@ -63,7 +63,7 @@ namespace TicTacToe
             this.btnTictac1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnTictac1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac1.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTictac1.Location = new System.Drawing.Point(57, 73);
+            this.btnTictac1.Location = new System.Drawing.Point(58, 61);
             this.btnTictac1.Name = "btnTictac1";
             this.btnTictac1.Size = new System.Drawing.Size(125, 125);
             this.btnTictac1.TabIndex = 3;
@@ -76,7 +76,7 @@ namespace TicTacToe
             this.btnTictac4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnTictac4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac4.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTictac4.Location = new System.Drawing.Point(57, 204);
+            this.btnTictac4.Location = new System.Drawing.Point(58, 192);
             this.btnTictac4.Name = "btnTictac4";
             this.btnTictac4.Size = new System.Drawing.Size(125, 125);
             this.btnTictac4.TabIndex = 4;
@@ -89,7 +89,7 @@ namespace TicTacToe
             this.btnTictac7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnTictac7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac7.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTictac7.Location = new System.Drawing.Point(57, 335);
+            this.btnTictac7.Location = new System.Drawing.Point(58, 323);
             this.btnTictac7.Name = "btnTictac7";
             this.btnTictac7.Size = new System.Drawing.Size(125, 125);
             this.btnTictac7.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace TicTacToe
             this.btnTictac2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnTictac2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac2.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTictac2.Location = new System.Drawing.Point(188, 73);
+            this.btnTictac2.Location = new System.Drawing.Point(189, 61);
             this.btnTictac2.Name = "btnTictac2";
             this.btnTictac2.Size = new System.Drawing.Size(125, 125);
             this.btnTictac2.TabIndex = 6;
@@ -115,7 +115,7 @@ namespace TicTacToe
             this.btnTictac5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnTictac5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac5.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTictac5.Location = new System.Drawing.Point(188, 204);
+            this.btnTictac5.Location = new System.Drawing.Point(189, 192);
             this.btnTictac5.Name = "btnTictac5";
             this.btnTictac5.Size = new System.Drawing.Size(125, 125);
             this.btnTictac5.TabIndex = 7;
@@ -128,7 +128,7 @@ namespace TicTacToe
             this.btnTictac8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnTictac8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac8.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTictac8.Location = new System.Drawing.Point(188, 335);
+            this.btnTictac8.Location = new System.Drawing.Point(189, 323);
             this.btnTictac8.Name = "btnTictac8";
             this.btnTictac8.Size = new System.Drawing.Size(125, 125);
             this.btnTictac8.TabIndex = 8;
@@ -141,7 +141,7 @@ namespace TicTacToe
             this.btnTictac3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnTictac3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac3.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTictac3.Location = new System.Drawing.Point(319, 73);
+            this.btnTictac3.Location = new System.Drawing.Point(320, 61);
             this.btnTictac3.Name = "btnTictac3";
             this.btnTictac3.Size = new System.Drawing.Size(125, 125);
             this.btnTictac3.TabIndex = 9;
@@ -154,7 +154,7 @@ namespace TicTacToe
             this.btnTictac6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnTictac6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac6.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTictac6.Location = new System.Drawing.Point(319, 204);
+            this.btnTictac6.Location = new System.Drawing.Point(320, 192);
             this.btnTictac6.Name = "btnTictac6";
             this.btnTictac6.Size = new System.Drawing.Size(125, 125);
             this.btnTictac6.TabIndex = 10;
@@ -167,7 +167,7 @@ namespace TicTacToe
             this.btnTictac9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnTictac9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac9.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTictac9.Location = new System.Drawing.Point(319, 335);
+            this.btnTictac9.Location = new System.Drawing.Point(320, 323);
             this.btnTictac9.Name = "btnTictac9";
             this.btnTictac9.Size = new System.Drawing.Size(125, 125);
             this.btnTictac9.TabIndex = 11;

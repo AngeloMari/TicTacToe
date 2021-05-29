@@ -38,7 +38,7 @@ namespace TicTacToe
             // 
             this.AboutGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.AboutGame.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AboutGame.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AboutGame.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AboutGame.Location = new System.Drawing.Point(12, 30);
             this.AboutGame.Name = "AboutGame";
             this.AboutGame.ReadOnly = true;

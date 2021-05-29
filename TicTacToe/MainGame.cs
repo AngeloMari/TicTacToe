@@ -107,13 +107,16 @@ namespace TicTacToe
 
             if (winner)
             {// To show who is the winner
-                String youWin = "";
                 if (xTurn)
-                   youWin = "O";
+                {
+                    OWins owinsForm = new OWins();
+                    owinsForm.Show();
+                }
                 else
-                   youWin = "X";
-
-                MessageBox.Show(youWin + " Wins!", "Congratulations!");
+                {
+                    XWins xwinsForm = new XWins();
+                    xwinsForm.Show();
+                }
 
                 btnTictac1.Enabled = false;
                 btnTictac2.Enabled = false;
@@ -128,7 +131,8 @@ namespace TicTacToe
 
              else if (numTurn == 9)
             {// To show if the game is draw
-                MessageBox.Show("It was a Draw!", "No Winner!");
+                Draw drawForm = new Draw();
+                drawForm.Show();
 
                 btnTictac1.Enabled = false;
                 btnTictac2.Enabled = false;
