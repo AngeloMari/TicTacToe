@@ -55,9 +55,18 @@ namespace TicTacToe
             else if ((Tictac3.Equals(Tictac5)) && (Tictac5.Equals(Tictac7)) && (!TictacEnabler3))
                 winner = true;
 
-
             if (winner)
             {// To show who is the winner
+                TictacEnabler1 = false;
+                TictacEnabler2 = false;
+                TictacEnabler3 = false;
+                TictacEnabler4 = false;
+                TictacEnabler5 = false;
+                TictacEnabler6 = false;
+                TictacEnabler7 = false;
+                TictacEnabler8 = false;
+                TictacEnabler9 = false;
+
                 if (xTurn)
                 {
                     OWins owinsForm = new OWins();
@@ -68,7 +77,9 @@ namespace TicTacToe
                     XWins xwinsForm = new XWins();
                     xwinsForm.Show();
                 }
-
+            }
+            else if (numTurn == 9)
+            {// To show if the game is draw
                 TictacEnabler1 = false;
                 TictacEnabler2 = false;
                 TictacEnabler3 = false;
@@ -78,22 +89,9 @@ namespace TicTacToe
                 TictacEnabler7 = false;
                 TictacEnabler8 = false;
                 TictacEnabler9 = false;
-            }
 
-            else if (numTurn == 9)
-            {// To show if the game is draw
                 Draw drawForm = new Draw();
-                drawForm.Show();
-
-                TictacEnabler1 = false;
-                TictacEnabler2 = false;
-                TictacEnabler3 = false;
-                TictacEnabler4 = false;
-                TictacEnabler5 = false;
-                TictacEnabler6 = false;
-                TictacEnabler7 = false;
-                TictacEnabler8 = false;
-                TictacEnabler9 = false;            
+                drawForm.Show();         
             }
         }
     }

@@ -46,12 +46,13 @@ namespace TicTacToe
             // 
             // bntRestart
             // 
-            this.bntRestart.BackColor = System.Drawing.Color.Lavender;
-            this.bntRestart.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bntRestart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(90)))), ((int)(((byte)(175)))));
+            this.bntRestart.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.bntRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntRestart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bntRestart.Location = new System.Drawing.Point(1, 2);
             this.bntRestart.Name = "bntRestart";
-            this.bntRestart.Size = new System.Drawing.Size(62, 23);
+            this.bntRestart.Size = new System.Drawing.Size(72, 23);
             this.bntRestart.TabIndex = 1;
             this.bntRestart.Text = "Restart";
             this.bntRestart.UseVisualStyleBackColor = false;
@@ -60,7 +61,7 @@ namespace TicTacToe
             // btnTictac1
             // 
             this.btnTictac1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnTictac1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnTictac1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.btnTictac1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac1.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTictac1.Location = new System.Drawing.Point(58, 61);
@@ -73,7 +74,7 @@ namespace TicTacToe
             // btnTictac4
             // 
             this.btnTictac4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnTictac4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnTictac4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.btnTictac4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac4.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTictac4.Location = new System.Drawing.Point(58, 192);
@@ -86,7 +87,7 @@ namespace TicTacToe
             // btnTictac7
             // 
             this.btnTictac7.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnTictac7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnTictac7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.btnTictac7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac7.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTictac7.Location = new System.Drawing.Point(58, 323);
@@ -99,7 +100,7 @@ namespace TicTacToe
             // btnTictac2
             // 
             this.btnTictac2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnTictac2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnTictac2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.btnTictac2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac2.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTictac2.Location = new System.Drawing.Point(189, 61);
@@ -112,7 +113,7 @@ namespace TicTacToe
             // btnTictac5
             // 
             this.btnTictac5.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnTictac5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnTictac5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.btnTictac5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac5.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTictac5.Location = new System.Drawing.Point(189, 192);
@@ -125,7 +126,7 @@ namespace TicTacToe
             // btnTictac8
             // 
             this.btnTictac8.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnTictac8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnTictac8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.btnTictac8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac8.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTictac8.Location = new System.Drawing.Point(189, 323);
@@ -138,7 +139,7 @@ namespace TicTacToe
             // btnTictac3
             // 
             this.btnTictac3.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnTictac3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnTictac3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.btnTictac3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac3.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTictac3.Location = new System.Drawing.Point(320, 61);
@@ -151,7 +152,7 @@ namespace TicTacToe
             // btnTictac6
             // 
             this.btnTictac6.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnTictac6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnTictac6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.btnTictac6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac6.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTictac6.Location = new System.Drawing.Point(320, 192);
@@ -164,7 +165,7 @@ namespace TicTacToe
             // btnTictac9
             // 
             this.btnTictac9.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnTictac9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnTictac9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.btnTictac9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTictac9.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTictac9.Location = new System.Drawing.Point(320, 323);
@@ -176,10 +177,11 @@ namespace TicTacToe
             // 
             // btnHelp
             // 
-            this.btnHelp.BackColor = System.Drawing.Color.Lavender;
-            this.btnHelp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(90)))), ((int)(((byte)(175)))));
+            this.btnHelp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelp.Location = new System.Drawing.Point(117, 2);
+            this.btnHelp.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHelp.Location = new System.Drawing.Point(126, 2);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(62, 23);
             this.btnHelp.TabIndex = 12;
@@ -189,10 +191,11 @@ namespace TicTacToe
             // 
             // btnAbout
             // 
-            this.btnAbout.BackColor = System.Drawing.Color.Lavender;
-            this.btnAbout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(90)))), ((int)(((byte)(175)))));
+            this.btnAbout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbout.Location = new System.Drawing.Point(58, 2);
+            this.btnAbout.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAbout.Location = new System.Drawing.Point(69, 2);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(62, 23);
             this.btnAbout.TabIndex = 13;
@@ -219,6 +222,7 @@ namespace TicTacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(23)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(500, 500);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnAbout);

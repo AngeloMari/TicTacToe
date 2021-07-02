@@ -62,7 +62,7 @@ namespace TicTacToe
         }
 
         private void btnTictac_Click(object sender, EventArgs e)
-        {   //To know whi's to move
+        {   //To know who's to move
             Button move = (Button)sender;
             if (checker.xTurn)
                 move.Text = "X";
@@ -92,6 +92,15 @@ namespace TicTacToe
             checker.TictacEnabler8 = btnTictac8.Enabled;
             checker.TictacEnabler9 = btnTictac9.Enabled;
             checker.winChecker();
+            btnTictac1.Enabled = checker.TictacEnabler1;
+            btnTictac2.Enabled = checker.TictacEnabler2;
+            btnTictac3.Enabled = checker.TictacEnabler3;
+            btnTictac4.Enabled = checker.TictacEnabler4;
+            btnTictac5.Enabled = checker.TictacEnabler5;
+            btnTictac6.Enabled = checker.TictacEnabler6;
+            btnTictac7.Enabled = checker.TictacEnabler7;
+            btnTictac8.Enabled = checker.TictacEnabler8;
+            btnTictac9.Enabled = checker.TictacEnabler9;
         }
     }
 }
