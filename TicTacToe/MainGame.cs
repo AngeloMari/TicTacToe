@@ -12,6 +12,7 @@ namespace TicTacToe
 {
     public partial class formGame : Form
     {
+        Winner checker = new();
         public formGame()
         {
             InitializeComponent();
@@ -41,7 +42,7 @@ namespace TicTacToe
             btnTictac8.Text = "";
             btnTictac9.Text = "";
 
-            numTurn = 0; //To avoid error in Draw message
+            checker.numTurn = 0; //To avoid error in Draw message
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
@@ -59,91 +60,38 @@ namespace TicTacToe
         {//To exit the game
             Application.Exit();
         }
- 
-        bool xTurn = true; // X will appear
-        int numTurn = 0;   //Number of turns
 
         private void btnTictac_Click(object sender, EventArgs e)
         {   //To know whi's to move
             Button move = (Button)sender;
-            if (xTurn)
+            if (checker.xTurn)
                 move.Text = "X";
             else
                 move.Text = "O";
 
-            xTurn = !xTurn;       //To flip from X to O
+            checker.xTurn = !checker.xTurn;       //To flip from X to O
             move.Enabled = false; //To disable the button after the move
-            numTurn++;            //To count the number of turns
+            checker.numTurn++;            //To count the number of turns
 
-            winChecker();
-        }
-
-        private void winChecker()
-        {//To check if there is a winner
-            bool winner = false;
-
-            //For horizontal patterns
-            if ((btnTictac1.Text == btnTictac2.Text) && (btnTictac2.Text == btnTictac3.Text) && (!btnTictac1.Enabled))
-                winner = true;
-            else if ((btnTictac4.Text == btnTictac5.Text) && (btnTictac5.Text == btnTictac6.Text) && (!btnTictac4.Enabled))
-                winner = true;
-            else if ((btnTictac7.Text == btnTictac8.Text) && (btnTictac8.Text == btnTictac9.Text) && (!btnTictac7.Enabled))
-                winner = true;
-
-            //For vertical patterns
-            if ((btnTictac1.Text == btnTictac4.Text) && (btnTictac4.Text == btnTictac7.Text) && (!btnTictac1.Enabled))
-                winner = true;
-            else if ((btnTictac2.Text == btnTictac5.Text) && (btnTictac5.Text == btnTictac8.Text) && (!btnTictac2.Enabled))
-                winner = true;
-            else if ((btnTictac3.Text == btnTictac6.Text) && (btnTictac6.Text == btnTictac9.Text) && (!btnTictac3.Enabled))
-                winner = true;
-
-            //For Diagonal patterns
-            if ((btnTictac1.Text == btnTictac5.Text) && (btnTictac5.Text == btnTictac9.Text) && (!btnTictac1.Enabled))
-                winner = true;
-            else if ((btnTictac3.Text == btnTictac5.Text) && (btnTictac5.Text == btnTictac7.Text) && (!btnTictac3.Enabled))
-                winner = true;
-
-
-            if (winner)
-            {// To show who is the winner
-                if (xTurn)
-                {
-                    OWins owinsForm = new OWins();
-                    owinsForm.Show();
-                }
-                else
-                {
-                    XWins xwinsForm = new XWins();
-                    xwinsForm.Show();
-                }
-
-                btnTictac1.Enabled = false;
-                btnTictac2.Enabled = false;
-                btnTictac3.Enabled = false;
-                btnTictac4.Enabled = false;
-                btnTictac5.Enabled = false;
-                btnTictac6.Enabled = false;
-                btnTictac7.Enabled = false;
-                btnTictac8.Enabled = false;
-                btnTictac9.Enabled = false;
-            }
-
-             else if (numTurn == 9)
-            {// To show if the game is draw
-                Draw drawForm = new Draw();
-                drawForm.Show();
-
-                btnTictac1.Enabled = false;
-                btnTictac2.Enabled = false;
-                btnTictac3.Enabled = false;
-                btnTictac4.Enabled = false;
-                btnTictac5.Enabled = false;
-                btnTictac6.Enabled = false;
-                btnTictac7.Enabled = false;
-                btnTictac8.Enabled = false;
-                btnTictac9.Enabled = false;
-            }
+            checker.Tictac1 = btnTictac1.Text;
+            checker.Tictac2 = btnTictac2.Text;
+            checker.Tictac3 = btnTictac3.Text;
+            checker.Tictac4 = btnTictac4.Text;
+            checker.Tictac5 = btnTictac5.Text;
+            checker.Tictac6 = btnTictac6.Text;
+            checker.Tictac7 = btnTictac7.Text;
+            checker.Tictac8 = btnTictac8.Text;
+            checker.Tictac9 = btnTictac9.Text;
+            checker.TictacEnabler1 = btnTictac1.Enabled;
+            checker.TictacEnabler2 = btnTictac2.Enabled;
+            checker.TictacEnabler3 = btnTictac3.Enabled;
+            checker.TictacEnabler4 = btnTictac4.Enabled;
+            checker.TictacEnabler5 = btnTictac5.Enabled;
+            checker.TictacEnabler6 = btnTictac6.Enabled;
+            checker.TictacEnabler7 = btnTictac7.Enabled;
+            checker.TictacEnabler8 = btnTictac8.Enabled;
+            checker.TictacEnabler9 = btnTictac9.Enabled;
+            checker.winChecker();
         }
     }
 }
