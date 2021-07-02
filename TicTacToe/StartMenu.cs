@@ -28,10 +28,5 @@ namespace TicTacToe
         {
             Application.Exit();
         }
-
-        private void formMenu_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

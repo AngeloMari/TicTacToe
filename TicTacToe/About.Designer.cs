@@ -45,7 +45,6 @@ namespace TicTacToe
             this.AboutGame.Size = new System.Drawing.Size(376, 358);
             this.AboutGame.TabIndex = 0;
             this.AboutGame.Text = resources.GetString("AboutGame.Text");
-            this.AboutGame.TextChanged += new System.EventHandler(this.AboutGame_TextChanged);
             // 
             // btnQuitAbout
             // 
@@ -74,7 +73,6 @@ namespace TicTacToe
             this.Name = "About";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
-            this.Load += new System.EventHandler(this.About_Load);
             this.ResumeLayout(false);
 
         }

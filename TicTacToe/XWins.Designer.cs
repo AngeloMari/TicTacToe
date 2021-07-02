@@ -60,7 +60,6 @@ namespace TicTacToe
             this.Name = "XWins";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "XWins";
-            this.Load += new System.EventHandler(this.XWins_Load);
             this.ResumeLayout(false);
 
         }

@@ -75,7 +75,6 @@ namespace TicTacToe
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.formMenu_Load);
             this.ResumeLayout(false);
 
         }

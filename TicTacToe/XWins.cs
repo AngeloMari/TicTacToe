@@ -21,10 +21,5 @@ namespace TicTacToe
         {
             this.Hide();
         }
-
-        private void XWins_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

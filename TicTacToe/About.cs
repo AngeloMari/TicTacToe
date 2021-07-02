@@ -17,16 +17,6 @@ namespace TicTacToe
             InitializeComponent();
         }
 
-        private void About_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void AboutGame_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnQuitAbout_Click(object sender, EventArgs e)
         {
             this.Hide();
