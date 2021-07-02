@@ -29,6 +29,7 @@ namespace TicTacToe
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formGame));
             this.bntRestart = new System.Windows.Forms.Button();
             this.btnTictac1 = new System.Windows.Forms.Button();
             this.btnTictac4 = new System.Windows.Forms.Button();
@@ -241,6 +242,7 @@ namespace TicTacToe
             this.Controls.Add(this.btnTictac1);
             this.Controls.Add(this.bntRestart);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe";
